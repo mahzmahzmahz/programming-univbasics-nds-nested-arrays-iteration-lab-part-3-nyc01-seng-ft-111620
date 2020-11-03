@@ -1,7 +1,6 @@
 def join_nested_strings(src)
   sentence = src.flat_map do |items|
-  items.select { |item| item.is_a?(String) }
-end.join(" ")
+  items.select { |item| item.is_a?(String) }.join(" ")
 
 [sentence]
   # src will be an Array of Arrays of Strings and Integers
